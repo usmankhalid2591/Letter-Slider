@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="slider">
+            <div id="d">
+                D
+            </div>
+            <div class="line">
+                
+            </div>
+            <div id="data">
+                CASE 1 <br>
+                <hr size="2" width="50px" color="#111" align="left">
+                <div class="title">
+                    COOL <br> DESIGN
+                </div>
+                <div class="info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat quas perspiciatis a delectus maxime, ad possimus amet nisi saepe modi sapiente beatae doloribus ducimus quam veritatis illo odit eos?
+                </div>
+            </div>
+            
+            <div id="a">
+                A
+            </div>
+            <div class="line">
+                
+            </div>
+            <div id="data2">
+                CASE 2 <br>
+                <hr size="2" width="50px" color="#111" align="left">
+                <div class="title">
+                    COOL <br> DESIGN
+                </div>
+                <div class="info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat quas perspiciatis a delectus maxime, ad possimus amet nisi saepe modi sapiente beatae doloribus ducimus quam veritatis illo odit eos?
+                </div>
+            </div>
+            
+            <div id="f">
+                F
+            </div>
+            <div class="line">
+                
+            </div>
+            <div id="data3">
+                CASE 3 <br>
+                <hr size="2" width="50px" color="#111" align="left">
+                <div class="title">
+                    COOL <br> DESIGN
+                </div>
+                <div class="info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat quas perspiciatis a delectus maxime, ad possimus amet nisi saepe modi sapiente beatae doloribus ducimus quam veritatis illo odit eos?
+                </div>
+            </div>
+            
+            <div id="t">
+                T
+            </div>
+            <div class="line">
+                
+            </div>
+            <div id="data4">
+                CASE 4 <br>
+                <hr size="2" width="50px" color="#111" align="left">
+                <div class="title">
+                    COOL <br> DESIGN
+                </div>
+                <div class="info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat quas perspiciatis a delectus maxime, ad possimus amet nisi saepe modi sapiente beatae doloribus ducimus quam veritatis illo odit eos?
+                </div>
+            </div>
+            
+        </div>
+    
+         <div id="navigation">
+             <a href="#" id="circle1"></a>
+             <a href="#" id="circle2"></a>
+             <a href="#" id="circle3"></a>
+             <a href="#" id="circle4"></a>
+         </div>
+    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <script type="text/javascript">
+        var l1=$("#d");
+        var l2=$("#a");
+        var l3=$("#f");
+        var l4=$("#t");
+        
+        var layer=$("#main");
+        
+        layer.mousemove(function(e){
+            var valueX=(e.pageX * -1 / 40) ;
+            
+            l1.css({'background-position':(valueX-200)+''+0});
+            l2.css({'background-position':(valueX)+''+0});
+            l3.css({'background-position':(valueX-200)+''+0});
+            l4.css({'background-position':(valueX+600)+''+0});
+            
+        });
+        
+        
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
